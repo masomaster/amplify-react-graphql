@@ -9,6 +9,9 @@ function App() {
         <p>
           Howdy world! You made it!
         </p>
+        <p>
+          And we made it back a second time!
+        </p>
       </header>
     </div>
   );
