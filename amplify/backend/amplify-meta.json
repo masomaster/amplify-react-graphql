@@ -1,0 +1,100 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-amplify6379c985359c4-staging-f1522-authRole",
+      "UnauthRoleArn": "arn:aws:iam::381492204116:role/amplify-amplify6379c985359c4-staging-f1522-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::381492204116:role/amplify-amplify6379c985359c4-staging-f1522-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-amplify6379c985359c4-staging-f1522-deployment",
+      "UnauthRoleName": "amplify-amplify6379c985359c4-staging-f1522-unauthRole",
+      "StackName": "amplify-amplify6379c985359c4-staging-f1522",
+      "StackId": "arn:aws:cloudformation:us-east-1:381492204116:stack/amplify-amplify6379c985359c4-staging-f1522/cafd6a40-f858-11ee-a04d-0affe058e7cb",
+      "AmplifyAppId": "dkfee4scvh2p6"
+    }
+  },
+  "auth": {
+    "amplifyreactgraphqldd45d5d7": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplify6379c985359c4-staging-f1522-deployment/amplify-cfn-templates/auth/amplifyreactgraphqldd45d5d7-cloudformation-template.json",
+        "logicalId": "authamplifyreactgraphqldd45d5d7"
+      },
+      "lastPushTimeStamp": "2024-04-12T19:31:23.652Z",
+      "output": {
+        "UserPoolId": "us-east-1_uUkX7dmQ8",
+        "AppClientIDWeb": "382ku8r2qoulspb9r2scse2fnr",
+        "AppClientID": "6hvb0v8uv35d6bkodgbautfekf",
+        "IdentityPoolId": "us-east-1:538b73cf-5848-4f77-afd8-567319ca5296",
+        "UserPoolArn": "arn:aws:cognito-idp:us-east-1:381492204116:userpool/us-east-1_uUkX7dmQ8",
+        "IdentityPoolName": "amplifyreactgraphqldd45d5d7_identitypool_dd45d5d7__staging",
+        "UserPoolName": "amplifyreactgraphqldd45d5d7_userpool_dd45d5d7"
+      },
+      "lastPushDirHash": "p8xy7T/9K888zQhrSnmH3WoSjAY="
+    }
+  },
+  "api": {
+    "amplifyreactgraphql": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "API_KEY",
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 7
+            }
+          },
+          "additionalAuthenticationProviders": []
+        },
+        "GraphQLAPIIdOutput": "cchyfajav5d5re5m4ankc5qaq4",
+        "GraphQLAPIEndpointOutput": "https://lbogmsb77rhr3p4n3sre7riooq.appsync-api.us-east-1.amazonaws.com/graphql",
+        "GraphQLAPIKeyOutput": "da2-szkkujxw7bb7zkhsc7qpzzg72a"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplify6379c985359c4-staging-f1522-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "logicalId": "apiamplifyreactgraphql"
+      },
+      "lastPushTimeStamp": "2024-04-12T19:31:28.407Z",
+      "lastPushDirHash": "/k4vKT705iZ06FbwhVRZj7DKox8="
+    }
+  },
+  "storage": {
+    "imagestore": {
+      "service": "S3",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "lastPushTimeStamp": "2024-04-12T19:31:28.407Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplify6379c985359c4-staging-f1522-deployment/amplify-cfn-templates/storage/cloudformation-template.json",
+        "logicalId": "storageimagestore"
+      },
+      "output": {
+        "BucketName": "amplifyreactgraphql05038daf886d4dbfb2df67d2f010f1522-staging",
+        "Region": "us-east-1"
+      },
+      "lastPushDirHash": "jpybZF5wVIqEm+er/L2yV0RDy1I="
+    }
+  }
+}
