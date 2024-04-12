@@ -39,8 +39,12 @@ const App = ({ signOut }) => {
     await Promise.all(
       notesFromAPI.map(async (note) => {
         if (note.image) {
-          const url = await getUrl(note.name);
-          note.image = url;
+          const getUrlResult = await getUrl({
+            key: note.name, 
+            options: {
+              accessLevel: 'guest'
+            }});
+          note.image = getUrlResult.url.toString();
         }
         return note;
       })
